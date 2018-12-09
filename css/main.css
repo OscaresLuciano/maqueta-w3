@@ -105,7 +105,7 @@ section h2 {
 
 .contenedor-recuadros {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -122,6 +122,18 @@ section h2 {
     border-top: none;
     border-radius: 5px;
     box-shadow: 0px 2px 2px 1px rgba(219,219,219,1);
+    display: flex;
+}
+
+.contenedor-recuadros .recuadro .der {
+    position: relative;
+    padding-left: 10px;
+}
+
+.contenedor-recuadros .recuadro .der .ver-mas{
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
 }
 
 .recuadro h3 {
