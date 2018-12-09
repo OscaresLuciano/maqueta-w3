@@ -1,144 +1,216 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Maquetado</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navegacion">
-        <div class="menu">
-            <ul>
-                <h3>Más promociones</h3>
-                <!--
-                <li><a href="#">> Rumbo al Este</a></li>
-                <li><a href="#">> Rumbo al Oeste</a></li>
-                <li><a href="#">> Rumbo al Norte</a></li>
-                -->
+      <div class="menu">
+        <ul>
+          <li>
+            <a class="underlined" href="#">Más promociones</a>
+            <ul class="submenu">
+              <li>
+                <a href="#"> <span class="arrow">&#62;</span> Rumbo al Este </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="arrow">&#62;</span> Rumbo al Oeste
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="arrow">&#62;</span> Rumbo al Norte
+                </a>
+              </li>
             </ul>
-            <ul>
-                <h3>Descuentos especiales</h3>
-                <!--
-                <li><a href="#">> Hospedajes</a></li>
-                <li><a href="#">> Pasajes</a></li>
-                <li><a href="#">> Restaurantes</a></li>
-                -->
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a class="underlined" href="#">Descuentos especiales</a>
+            <ul class="submenu">
+              <li>
+                <a href="#"> <span class="arrow">&#62;</span> Hospedajes </a>
+              </li>
+              <li>
+                <a href="#"> <span class="arrow">&#62;</span> Pasajes </a>
+              </li>
+              <li>
+                <a href="#"> <span class="arrow">&#62;</span> Restaurantes </a>
+              </li>
             </ul>
-        </div>
-        <h2>Rumbo al Sur Verano 2011</h2>
+          </li>
+        </ul>
+      </div>
+      <h2>Rumbo al Sur Verano 2011</h2>
     </nav>
 
     <header>
-        <img src="img/banner.jpg" alt="Banner">
-        <div class="texto-banner">
-            <p>Este verano disfruta de todos estos beneficios que tenemos para ti</p>
-        </div>
+      <img src="img/banner.jpg" alt="Banner" />
+      <div class="texto-banner">
+        <p>
+          Este verano disfruta de todos estos beneficios que tenemos para ti
+        </p>
+      </div>
     </header>
 
     <section>
-        <h2>Aprovéchalos con tus Tarjetas de Citi</h2>
-        <div class="contenedor-recuadros">
-            <article>
-                <div class="recuadro">
-                    <div class="izq">
-                        <img src="img/grifos.jpg" alt="">
-                    </div>
-                    
-                    <div class="der">
-                        <h3>Grifos</h3>
-                        <p>Pagando con tus tarjetas de Crédito de Citi obtienes un <strong>15% de descuento</strong> en tus consumos de gasolina.</p>
-                        <br>
-                        <p>Para activar la Promoción inscríbete llamando al:</p>
-                        <h3>213-0855</h3>
-                        <input class="ver-mas" type="button" value="> Ver más">
-                    </div>
-                    
-                </div>
-            </article>
-            <article>
-                <div class="recuadro">
-                    <div class="izq">
-                        <img src="img/programa-gourmet.jpg" alt="">
-                    </div>
-                    <div class="der">
-                        <h3>Programa Gourmet de Citi</h3>
-                        <p>Disfruta <strong>Gratis</strong> los Platos Recomendados por Citi en una exclusiva selección de restaurantes en el Boulevard de Asia</p>
-                        <ul>
-                            <li>La granja del abuelo</li>
-                            <li>La Carreta</li>
-                            <li>Antica de Asia</li>
-                            <li>Bravo Restobar</li>
-                            <li>Tragaluz</li>
-                            <li>Punta Sak</li>
-                        </ul>
-                        <p>y descuentos en restaurantes de Lima</p>
-                        <input class="ver-mas" type="button" value="> Ver más">
+      <h2>Aprovéchalos con tus Tarjetas de Citi</h2>
+      <div class="contenedor-recuadros">
+        <article>
+          <div class="recuadro">
+            <div class="izq"><img src="img/grifos.jpg" alt="" /></div>
+
+
+            <div id="simpleModal" class="modal">
+                    <div class="modal-content">
+                        <span class="closeBtn">&times;</span>
                     </div>
                 </div>
-            </article>
-            <article>
-                <div class="recuadro">
-                    <div class="izq">
-                        <img src="img/beneficios-especiales.jpg" alt="">
-                    </div>
-                    <div class="der">
-                        <h3>Beneficios Especiales</h3>
-                        <p>Llévate <strong>Gratis</strong> un obsequio de Citi en las clásicas paradas camino a las playas del Sur</p>
-                        <ul>
-                            <li>Doña Paulina Chicharroneria</li>
-                            <li>Buon Di Café</li>
-                            <li>Helados Ovni</li>
-                            <li>Pancitos Km. 63.5</li>
-                        </ul>
-                        <input class="ver-mas" type="button" value="> Ver más">
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="recuadro">
-                    <div class="izq">
-                        <img src="img/cajeros.jpg" alt="">
-                    </div>
-                    <div class="der">
-                        <h3>Cajeros Global Net</h3>
-                        <p>Retira efectivo de los Cajeros Global Net <strong>sin comisión interbancaria</strong></p>
-                    </div>
-                </div>
-            </article>
-        </div>
+
+                
+            <div class="der">
+              <h3>Grifos</h3>
+              <p>
+                Pagando con tus tarjetas de Crédito de Citi obtienes un
+                <strong>15% de descuento</strong> en tus consumos de gasolina.
+              </p>
+              <br />
+              <p>Para activar la Promoción inscríbete llamando al:</p>
+              <h3>213-0855</h3>
+              <button id="modalBtn" class="button">
+                <span class="arrow">&#62;</span> Ver más
+              </button>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="recuadro">
+            <div class="izq"><img src="img/programa-gourmet.jpg" alt="" /></div>
+            <div class="der">
+              <h3>Programa Gourmet de Citi</h3>
+              <p>
+                Disfruta <strong>Gratis</strong> los Platos Recomendados por
+                Citi en una exclusiva selección de restaurantes en el Boulevard
+                de Asia
+              </p>
+              <ul>
+                <li>La granja del abuelo</li>
+                <li>La Carreta</li>
+                <li>Antica de Asia</li>
+                <li>Bravo Restobar</li>
+                <li>Tragaluz</li>
+                <li>Punta Sak</li>
+              </ul>
+              <p>y descuentos en restaurantes de Lima</p>
+              <button id="modalBtn" class="button">
+                <span class="arrow">&#62;</span> Ver más
+              </button>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="recuadro">
+            <div class="izq">
+              <img src="img/beneficios-especiales.jpg" alt="" />
+            </div>
+            <div class="der">
+              <h3>Beneficios Especiales</h3>
+              <p>
+                Llévate <strong>Gratis</strong> un obsequio de Citi en las
+                clásicas paradas camino a las playas del Sur
+              </p>
+              <ul>
+                <li>Doña Paulina Chicharroneria</li>
+                <li>Buon Di Café</li>
+                <li>Helados Ovni</li>
+                <li>Pancitos Km. 63.5</li>
+              </ul>
+              <button id="modalBtn" class="button">
+                <span class="arrow">&#62;</span> Ver más
+              </button>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="recuadro">
+            <div class="izq"><img src="img/cajeros.jpg" alt="" /></div>
+            <div class="der">
+              <h3>Cajeros Global Net</h3>
+              <p>
+                Retira efectivo de los Cajeros Global Net
+                <strong>sin comisión interbancaria</strong>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section>
-            <div class="links-utiles">
-                <div class="bases-mapa">
-                    <a class="bases" href="https://www.citibank.com.pe/peru/common/pdf/bases_condiciones_rumbosurverano2011.pdf
-                    " target="_blank">> Ver Bases y Condiciones.</a>
-                    <a href="https://www.citibank.com.pe/peru/common/pdf/mapa_rumbosurverano2011.pdf
-                    " target="_blank"><img src="img/ver-mapa.jpg" alt="Mapa"></a>
-                </div>
-                <p>Si aún no tienes tu Tarjeta de Crédito Citi, <a href="https://www.latam.citibank.com/esales/global/index.jsp?pais=peru&prod=tarj
-                    ">> haz clic aquí</a></p>
-                <h4>Para cualquier consulta sobre estos beneficios llama al CitiPhone 221-7000.</h4>
-                <div class="logo">
-                    <img src="img/logo-citi.jpg" alt="Logo">
-                </div>
-            </div>
+      <div class="links-utiles">
+        <div class="bases-mapa">
+          <a
+            class="bases"
+            href="https://www.citibank.com.pe/peru/common/pdf/bases_condiciones_rumbosurverano2011.pdf
+                    "
+            target="_blank"
+            >> Ver Bases y Condiciones.</a
+          >
+          <a
+            href="https://www.citibank.com.pe/peru/common/pdf/mapa_rumbosurverano2011.pdf
+                    "
+            target="_blank"
+            ><img src="img/ver-mapa.jpg" alt="Mapa"
+          /></a>
+        </div>
+        <p>
+          Si aún no tienes tu Tarjeta de Crédito Citi,
+          <a
+            href="https://www.latam.citibank.com/esales/global/index.jsp?pais=peru&prod=tarj
+                    "
+            target="_blank"
+            ><span class="arrow">&#62;</span>haz clic aquí</a
+          >
+        </p>
+        <h4>
+          Para cualquier consulta sobre estos beneficios llama al CitiPhone
+          221-7000.
+        </h4>
+        <div class="logo"><img src="img/logo-citi.jpg" alt="Logo" /></div>
+      </div>
     </section>
 
     <footer>
-        <div class="legales">
-            <p>
-                Vigente desde el 27 de Diciembre al 31 de Marzo del 2011 o hasta agotar stock de premios (70 Platos Recomendados por Citi por restaurante afiliado) lo que ocurra primero. Participan las transacciones realizadas en los restaurantes participantes en Lima Metropolitana con Tarjetas de Crédito y Débito de Citi emitidas en Perú. Se aplican restricciones. MIN-2010-0364105.
-            </p>
-            <br>
-            <p>
-                La obligación de difusión de la presente información se encuentra en la Ley Nº 28587 y su Reglamento, Resolución SBS Nº 1765-2005. Cualquier referencia a Citibank debe entenderse como Citibank del Perú S.A. Citi, el diseño del arco y Citi never sleeps son marcas registradas de servicios de Citigroup Inc. Los productos y servicios ofrecidos por terceros no son responsabilidad de Citi. Para mayor información sobre tasas, comisiones, beneficios y otras consultas visitar www.citibank.com.pe o llame a Citiphone Banking al 221-7000 y desde provincias al 0-800-47100.
-            </p>
-        </div>
+      <div class="legales">
+        <p>
+          Vigente desde el 27 de Diciembre al 31 de Marzo del 2011 o hasta
+          agotar stock de premios (70 Platos Recomendados por Citi por
+          restaurante afiliado) lo que ocurra primero. Participan las
+          transacciones realizadas en los restaurantes participantes en Lima
+          Metropolitana con Tarjetas de Crédito y Débito de Citi emitidas en
+          Perú. Se aplican restricciones. MIN-2010-0364105.
+        </p>
+        <br />
+        <p>
+          La obligación de difusión de la presente información se encuentra en
+          la Ley Nº 28587 y su Reglamento, Resolución SBS Nº 1765-2005.
+          Cualquier referencia a Citibank debe entenderse como Citibank del Perú
+          S.A. Citi, el diseño del arco y Citi never sleeps son marcas
+          registradas de servicios de Citigroup Inc. Los productos y servicios
+          ofrecidos por terceros no son responsabilidad de Citi. Para mayor
+          información sobre tasas, comisiones, beneficios y otras consultas
+          visitar www.citibank.com.pe o llame a Citiphone Banking al 221-7000 y
+          desde provincias al 0-800-47100.
+        </p>
+      </div>
     </footer>
-    
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
