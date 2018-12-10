@@ -268,5 +268,19 @@ footer .legales{
 }
 
 .modal-content{
-    back
+    margin-left: 20%;
+    margin-top: 10%;
+    height: 40%;
+    width: 40%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2), 0 7px 20px 0 rgba (0,0,0,.17px);
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    height: 11%;
+    width: 20%;
+    top: 0;
+    right: 0;
+    cursor: pointer;
 }
