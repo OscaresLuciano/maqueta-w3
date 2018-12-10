@@ -24,6 +24,8 @@ body {
     font-size: 30px;
 }
 
+/*Nav menu*/
+
 .menu {
     display: flex;
 }
@@ -91,6 +93,8 @@ body {
     padding-right: 4px;
 }
 
+/* Header */
+
 header {
     max-width: 800px;
     width: 80%;
@@ -118,6 +122,8 @@ header .texto-banner p {
     color: #FFF;
     padding: 10px 45px;
 }
+
+/* Cards */
 
 section {
     max-width: 800px;
@@ -176,7 +182,7 @@ section h2 {
     color:#18ACD4;
 }
 
-.recuadro button {
+.recuadro .ver-mas {
     background: #18ACD4;
     color: #FFF;
     font-weight: bold;
@@ -189,6 +195,8 @@ section h2 {
     bottom: -15px;
     right: -15px;
 }
+
+/* Links utiles */
 
 section .links-utiles {
     padding: 40px 0;
@@ -238,6 +246,8 @@ section .links-utiles .logo {
     right: -50px;
 }
 
+/* Footer */
+
 footer {
     max-width: 900px;
     width: 80%;
@@ -252,11 +262,10 @@ footer .legales{
     border-top: solid 1px #000;
 }
 
-
-
-
+/* Modal */
 
 .modal {
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -268,19 +277,23 @@ footer .legales{
 }
 
 .modal-content{
-    margin-left: 20%;
-    margin-top: 10%;
-    height: 40%;
-    width: 40%;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2), 0 7px 20px 0 rgba (0,0,0,.17px);
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: 52%;
+    max-width: 800px;
     position: relative;
 }
 
-.closeBtn {
-    position: absolute;
-    height: 11%;
-    width: 20%;
-    top: 0;
-    right: 0;
+#closeBtn {
+    background: #18ACD4;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius:3px;
+    border: none;
+    padding: .3em .8em;
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }

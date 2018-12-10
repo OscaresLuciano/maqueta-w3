@@ -7,10 +7,12 @@
   <title>Maquetado</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-  <script src="main.js"></script>
 </head>
 
 <body>
+
+  <!-- Nav -->
+
   <nav class="navegacion">
     <div class="menu">
       <ul>
@@ -53,6 +55,8 @@
     <h2>Rumbo al Sur Verano 2011</h2>
   </nav>
 
+  <!-- Banner -->
+
   <header>
     <img src="img/banner.jpg" alt="Banner" />
     <div class="texto-banner">
@@ -62,22 +66,16 @@
     </div>
   </header>
 
+  <!-- Cards -->
+
   <section>
     <h2>Aprovéchalos con tus Tarjetas de Citi</h2>
     <div class="contenedor-recuadros">
       <article>
         <div class="recuadro">
-          <div class="izq"><img src="img/grifos.jpg" alt="" /></div>
-
-
-          <div id="simpleModal" class="modal">
-            <div class="modal-content">
-              <img src="img/popup-grifo.jpg" alt="">
-              <button class="closeBtn">Cerrar <span>&times;</span></button>
-            </div>
+          <div class="izq">
+            <img src="img/grifos.jpg" alt="" />
           </div>
-
-
           <div class="der">
             <h3>Grifos</h3>
             <p>
@@ -87,9 +85,15 @@
             <br />
             <p>Para activar la Promoción inscríbete llamando al:</p>
             <h3>213-0855</h3>
-            <button class="button">
+            <button id="modalBtn" class="ver-mas">
               <span class="arrow">&#62;</span> Ver más
             </button>
+            <div id="simpleModal" class="modal">
+              <div class="modal-content">
+                <img src="img/popup-grifo.jpg" alt="">
+                <button id="closeBtn">Cerrar <span>&times;</span></button>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -112,9 +116,15 @@
               <li>Punta Sak</li>
             </ul>
             <p>y descuentos en restaurantes de Lima</p>
-            <button class="button">
+            <button id="modalBtn" class="ver-mas">
               <span class="arrow">&#62;</span> Ver más
             </button>
+            <div id="simpleModal" class="modal">
+                <div class="modal-content">
+                  <img src="img/popup-gourmet.jpg" alt="">
+                  <button id="closeBtn">Cerrar <span>&times;</span></button>
+                </div>
+              </div>
           </div>
         </div>
       </article>
@@ -135,9 +145,15 @@
               <li>Helados Ovni</li>
               <li>Pancitos Km. 63.5</li>
             </ul>
-            <button class="button">
+            <button id="modalBtn" class="ver-mas">
               <span class="arrow">&#62;</span> Ver más
             </button>
+            <div id="simpleModal" class="modal">
+                <div class="modal-content">
+                  <img src="img/popup-beneficios.jpg" alt="">
+                  <button id="closeBtn">Cerrar <span>&times;</span></button>
+                </div>
+              </div>
           </div>
         </div>
       </article>
@@ -156,6 +172,8 @@
     </div>
   </section>
 
+  <!-- Links -->
+
   <section>
     <div class="links-utiles">
       <div class="bases-mapa">
@@ -168,9 +186,9 @@
       </div>
       <p>
         Si aún no tienes tu Tarjeta de Crédito Citi,
-        <a href="https://www.latam.citibank.com/esales/global/index.jsp?pais=peru&prod=tarj
-                    "
-          target="_blank"><span class="arrow">&#62;</span>haz clic aquí</a>
+        <a href="https://www.latam.citibank.com/esales/global/index.jsp?pais=peru&prod=tarj"
+          onclick="return !window.open(this.href, 'Google', 'width=800,height=600')"
+          target="_blank><span class="arrow">&#62;</span>haz clic aquí</a>
       </p>
       <h4>
         Para cualquier consulta sobre estos beneficios llama al CitiPhone
@@ -179,6 +197,8 @@
       <div class="logo"><img src="img/logo-citi.jpg" alt="Logo" /></div>
     </div>
   </section>
+
+  <!-- Footer -->
 
   <footer>
     <div class="legales">
@@ -204,7 +224,8 @@
       </p>
     </div>
   </footer>
-  <script src="main.js"></script>
+  
+  <script src="js/main.js"></script>
 </body>
 
 </html>
